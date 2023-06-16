@@ -1,0 +1,179 @@
+.App {
+  text-align: center;
+}
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap");
+h1,button {
+  font-family: "Bellefair", sans-serif;
+}
+p {
+  font-family: "Barlow", sans-serif;
+}
+h5 {
+  font-family: "Barlow Condensed", sans-serif;
+}
+ul li a {
+  font-family: "Barlow Condensed", sans-serif;
+}
+a {
+  font-family: "Barlow Condensed", sans-serif;
+}
+.header {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  padding: 20px !important;
+}
+.header .navbar {
+  position: absolute !important;
+  background-color: rgb(255, 255, 255, 0.04) !important;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  width: 50vw;
+  height: 140vh;
+  top: -10000%;
+  padding: 2px;
+  left: 50%;
+  transition: right 0.5s ease-in-out;
+}
+.header .navbar.open {
+  top: 0px;
+  z-index: 4;
+}
+.navbar ul li {
+  margin: 40px;
+}
+
+.close {
+  display: block;
+  margin-left: 70%;
+  margin-top: 18%;
+}
+
+
+.home {
+  background: url("./assets/home/background-home-mobile.jpg") no-repeat
+    center/cover;
+  height: calc(150vh + 1px);
+}
+.home .overlay {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  height: calc(150vh + 1px);
+}
+.destination {
+  background: url("./assets/destination/background-destination-mobile.jpg")
+    no-repeat center/cover;
+  height: calc(140vh + 1px);
+}
+.crew {
+  background: url("./assets/crew/background-crew-mobile.jpg") no-repeat
+    center/cover;
+  height: calc(140vh + 1px);
+}
+.technology {
+  background: url("./assets/technology/background-technology-mobile.jpg")
+    no-repeat center/cover;
+  height: calc(140vh + 1px);
+}
+@media (min-width: 768px) and (max-width: 800px) {
+  .header .navbar {
+    position: relative;
+    background-color: rgb(255, 255, 255, 0.04) !important;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    top: 0;
+    width: 50vw;
+    height: unset;
+    /* margin-top: 20px; */
+    padding: 25px 0;
+    padding-left: 15px;
+  }
+  .close {
+    display: none !important;
+  }
+  .navbar ul {
+    display: flex;
+  }
+
+  .navbar ul li {
+    margin: 0 10px;
+  }
+  .home {
+    background: url("./assets/home/background-home-tablet.jpg") no-repeat
+      center/cover;
+    height: calc(120vh + 1px);
+  }
+  .home .overlay {
+    height: calc(120vh + 1px) !important;
+  }
+  .destination {
+    background: url("./assets/destination/background-destination-tablet.jpg")
+      no-repeat center/cover;
+    height: calc(150vh + 1px);
+  }
+  .crew {
+    background: url("./assets/crew/background-crew-tablet.jpg") no-repeat
+      center/cover;
+    height: calc(150vh + 1px);
+  }
+  .technology {
+    background: url("./assets/technology/background-technology-tablet.jpg")
+      no-repeat center/cover;
+    height: calc(140vh + 1px);
+  }
+}
+@media (min-width: 1000px) {
+  .header .navbar {
+    position: relative;
+    background-color: rgb(255, 255, 255, 0.04) !important;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    top: 0;
+    width: calc(50vw - 10px);
+    height: unset;
+    margin-top: 20px;
+    padding: 20px 0;
+  }
+  .close {
+    display: none !important;
+  }
+
+  .navbar ul {
+    display: flex;
+  }
+  .navbar ul li {
+    margin: 0 40px;
+  }
+  .home {
+    background: url("./assets/home/background-home-desktop.jpg") no-repeat
+      center/cover;
+    height: calc(120vh + 1px);
+  }
+  .home .overlay {
+    flex-direction: row !important;
+    text-align: start !important;
+    margin: 0 auto !important;
+    height: calc(120vh + 1px) !important;
+  }
+  .destination {
+    background: url("./assets/destination/background-destination-desktop.jpg")
+      no-repeat center/cover;
+    height: calc(140vh + 1px);
+  }
+  .destination img {
+    width: 30vw;
+  }
+  .crew {
+    background: url("./assets/crew/background-crew-desktop.jpg") no-repeat
+      center/cover;
+    height: calc(110vh + 1px);
+  }
+  .technology {
+    background: url("./assets/technology/background-technology-desktop.jpg")
+      no-repeat center/cover;
+    height: calc(140vh + 1px);
+  }
+}
