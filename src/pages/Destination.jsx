@@ -15,7 +15,7 @@ const Destination = () => {
         <div className="lg:flex items-center justify-evenly gap-3">
           <article className="lg:w-1/3">
             <img
-              className="w-1/2 mx-auto mt-5 md:mb-8"
+              className="w-1/2 mx-auto mt-5 md:mb-8 animate-spin"
               src={images.png}
               alt={name}
             />

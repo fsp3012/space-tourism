@@ -15,7 +15,7 @@ const Technology = () => {
           <div className="lg:w-1/3">
             <img className="py-10 lg:hidden" src={images.landscape} alt="" />
             <img
-              className="hidden md:hidden lg:block"
+              className="hidden md:hidden lg:block animate-bounce"
               src={images.portrait}
               alt=""
             />

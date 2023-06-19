@@ -13,7 +13,7 @@ const Crew = () => {
         </h1>
         <div className="md:flex flex-col-reverse lg:flex-row-reverse">
           <div className="lg:w-1/2">
-            <img className="w-1/2 mx-auto mt-10" src={images.png} alt={name} />{" "}
+            <img className="w-1/2 mx-auto mt-10 animate-pulse" src={images.png} alt={name} />{" "}
             <hr className="md:hidden" />
           </div>
           <div className="md:flex flex-col-reverse lg:w-1/2 lg:text-start lg:ms-20">
