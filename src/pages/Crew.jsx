@@ -13,7 +13,11 @@ const Crew = () => {
         </h1>
         <div className="md:flex flex-col-reverse lg:flex-row-reverse">
           <div className="lg:w-1/2">
-            <img className="w-1/2 mx-auto mt-10 animate-pulse" src={images.png} alt={name} />{" "}
+            <img
+              className="w-1/2 mx-auto mt-10 animate-pulse"
+              src={images.png}
+              alt={name}
+            />{" "}
             <hr className="md:hidden" />
           </div>
           <div className="md:flex flex-col-reverse lg:w-1/2 lg:text-start lg:ms-20">
@@ -21,18 +25,26 @@ const Crew = () => {
               {astronaut.map((item, index) => (
                 <button key={index} onClick={() => setValue(index)}>
                   {" "}
-                  <span className="text-gray-500 text-8xl mr-4 md:text-9xl hover:text-white">
+                  <span
+                    className={`${
+                      index === value ? "border-b-2" : ""
+                    } text-gray-500 text-8xl mr-4 md:text-9xl hover:text-white`}
+                  >
                     .
                   </span>
                 </button>
               ))}
             </div>
             <div>
-              <p className="uppercase text-lg pb-2 pt-5 text-gray-500 md:text-3xl" >
+              <p className="uppercase text-lg pb-2 pt-5 text-gray-500 md:text-3xl">
                 {role}
               </p>
-              <h1 className="uppercase text-white text-2xl pb-5 md:text-5xl">{name}</h1>
-              <p className="text-purple-100 md:text-2xl md:mx-8 lg:mx-0">{bio}</p>
+              <h1 className="uppercase text-white text-2xl pb-5 md:text-5xl">
+                {name}
+              </h1>
+              <p className="text-purple-100 md:text-2xl md:mx-8 lg:mx-0">
+                {bio}
+              </p>
             </div>
           </div>
         </div>

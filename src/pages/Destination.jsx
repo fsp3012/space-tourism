@@ -23,7 +23,9 @@ const Destination = () => {
           <article className="lg:text-start lg:w-1/3">
             {planets.map((item, index) => (
               <button
-                className="text-purple-100 text-1xl uppercase mr-4 mt-7 md:text-2xl hover:text-white hover:border-b-2 md:mb-8"
+                className={`${
+                  index === value ? "border-b-4" : ""
+                } text-purple-100 text-1xl uppercase mr-4 mt-7 md:text-2xl hover:text-white hover:border-b-2 md:mb-8`}
                 key={index}
                 onClick={() => setValue(index)}
               >

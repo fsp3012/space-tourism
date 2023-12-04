@@ -29,7 +29,9 @@ const Technology = () => {
                   onClick={() => {
                     setValue(index);
                   }}
-                  className="text-white bg-transparent border rounded-full w-14 h-14 mr-5 hover:bg-white hover:text-black"
+                  className={`${
+                    index === value ? "border-b-4 border-red-500" : ""
+                  } text-white bg-transparent border rounded-full w-14 h-14 mr-5 hover:bg-white hover:text-black`}
                 >
                   {item.index}
                 </button>

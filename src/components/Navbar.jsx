@@ -33,22 +33,22 @@ const Navbar = () => {
         />
         <ul>
           <li>
-            <Link className="md:hover:border-b-2 pb-5" to="/">
+            <Link onClick={handleClick} className="md:hover:border-b-2 pb-5" to="/">
               00 HOME
             </Link>{" "}
           </li>
           <li>
-            <Link className="md:hover:border-b-2 pb-5" to="/destination">
+            <Link onClick={handleClick} className="md:hover:border-b-2 pb-5" to="/destination">
               01 DESTINATION
             </Link>{" "}
           </li>
           <li>
-            <Link className="md:hover:border-b-2 pb-5" to={"/crew"}>
+            <Link onClick={handleClick} className="md:hover:border-b-2 pb-5" to={"/crew"}>
               02 CREW
             </Link>{" "}
           </li>
           <li>
-            <Link className="md:hover:border-b-2 pb-5" to={"/technology"}>
+            <Link onClick={handleClick} className="md:hover:border-b-2 pb-5" to={"/technology"}>
               03 TECHNOLOGY
             </Link>{" "}
           </li>
